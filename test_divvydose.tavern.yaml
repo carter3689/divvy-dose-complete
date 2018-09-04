@@ -1,0 +1,39 @@
+# This file serves as an example of what would/could be tested. I would ideally like to test the presence of each part of the schema.
+# However, the results for some of the responses for this challenge are fairly long so to keep things straight to the point, I have two sample tests below
+# The tests written here are written for the tavern testing suite and coupled with pytest.
+test_name: Ensure proper response from route
+
+
+stages:
+  - name: Make sure we have the right ID
+
+    request:
+      url: http://127.0.0.1:5000/languages-used
+      method: GET
+
+
+    response:
+      status_code: 200
+      body:
+        GitHub-Languages-Used-RequestsRepo: 3
+        BitBucket-Languages-Used: Not available at this time. Check back later.
+
+--- #End of first Test
+
+
+test_name: Proper response for commits
+
+stages:
+  - name: Commits test
+    request:
+      url: http://127.0.0.1:5000/commits
+      method: GET
+    response:
+      status_code: 200
+      body:
+        GitHub-Repos-count: 30
+        BitBucket-Commits-count: 2
+
+
+--- # End of second test
+        
