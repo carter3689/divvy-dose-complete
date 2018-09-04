@@ -1,4 +1,4 @@
-#DivvyDose API Project 
+# DivvyDose API Project 
 
 Divvy Dose API code test
 
@@ -62,8 +62,7 @@ In terms of testing the API:
 ## To run the testing file:
 ---
 - Run ```shell
-py.test test_divvydose.tavern.yaml  -v
-```
+py.test test_divvydose.tavern.yaml  -v```
 ### Further Documentation regarding endpoints
 
 | EndPoint        | Description | 

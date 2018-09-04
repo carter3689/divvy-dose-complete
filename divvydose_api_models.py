@@ -1,7 +1,7 @@
 import requests
 
 totalModel = {
-    'GitHub-User-PublicRepos': requests.get('https://api.github.com/users/kennethreitz').json(),
+    'GitHub-User-PublicRepos': requests.get('https://api.github.com/users/kennethreitz').json()['public_repos'],
     'GitHub-User-Forks': requests.get('https://api.github.com/repos/kennethreitz/requests/forks').json(),
     'BitBucket-User-PublicRepos': len(requests.get('https://api.bitbucket.org/2.0/users/mailchimp/repositories').json()),
     'BitBucket-User-Forks': requests.get('https://api.bitbucket.org/2.0/repositories/mailchimp/mailchimp-api-python/forks').json()
