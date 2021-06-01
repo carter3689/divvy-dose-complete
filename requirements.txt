@@ -38,5 +38,5 @@ six==1.11.0
 stevedore==1.29.0
 tabula-py==1.2.0
 tavern==0.18.0
-urllib3==1.23
+urllib3==1.26.5
 Werkzeug==0.14.1
